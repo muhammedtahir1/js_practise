@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons - Js practise</title>
+</head>
+
+<body>
+  <p>Adults Plain Cotton T-shirt</p>
+  <p>Price: $7.99</p>
+  <button style="
+  background-color: yellow;
+  " onclick="alert('Added to cart')">Add to cart</button>
+  <button style="
+  background-color: orange;
+  " onclick="
+  alert('Loading')
+  alert('Purchased.')
+  ">Buy now</button>
+
+  <script>
+    // this function is not working inside the onclick attribute
+    function click() {
+      alert("Added to cart.")
+    }
+  </script>
+
+</body>
+
+</html>
