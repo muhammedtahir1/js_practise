@@ -1,22 +1,7 @@
 let calculation = '';
 
-function btn1() {
-  calculation += '1';
-  console.log(calculation);
-}
-
-function btn2() {
-  calculation += '2';
-  console.log(calculation);
-}
-
-function btn3() {
-  calculation += '3';
-  console.log(calculation);
-}
-
-function add() {
-  calculation += ' + '
+function operator(value) {
+  calculation += value;
   console.log(calculation);
 }
 
@@ -24,5 +9,13 @@ function equals() {
   calculation = eval(calculation);
   console.log(calculation);
 }
+
+// Clear button not working!!!
+function clear() {
+  calculation = '';
+  console.log(calculation);
+}
+
+
 
 
