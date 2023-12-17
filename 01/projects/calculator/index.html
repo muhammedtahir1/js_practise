@@ -7,46 +7,52 @@
   <title>Calculator++</title>
   <script src="script.js" defer></script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <p class="calc-display"></p>
-  <div>
-    <button onclick="operator('1')">1</button>
-    <button onclick="operator('2')">2</button>
-    <button onclick="operator('3')">3</button>
-    <button onclick="operator(' + ')">+</button>
-  </div>
-  &nbsp;
-  <div>
-    <button onclick="operator('4')">4</button>
-    <button onclick="operator('5')">5</button>
-    <button onclick="operator('6')">6</button>
-    <button onclick="operator(' - ')">-</button>
-  </div>
-  &nbsp;
-  <div>
-    <button onclick="operator('7')">7</button>
-    <button onclick="operator('8')">8</button>
-    <button onclick="operator('9')">9</button>
-    <button onclick="operator(' * ')">*</button>
-  </div>
-  &nbsp;
-  <div>
-    <button onclick="operator('0')">0</button>
-    <button onclick="operator('.')">.</button>
-    <button onclick="equals()">=</button>
-    <button onclick="operator(' / ')">/</button>
-  </div>
-  &nbsp;
-  <div>
-    <!-- <button onclick="calculation=''
+  <main>
+    <div>
+      <p class="calc-display calculation"></p>
+    </div>
+    <div>
+      <button class="btn gray-btn" onclick="operator('2')">2</button>
+      <button class="btn gray-btn" onclick="operator('1')">1</button>
+      <button class="btn gray-btn" onclick="operator('3')">3</button>
+      <button class="btn orange-btn" onclick="operator(' + ')">+</button>
+    </div>
+    &nbsp;
+    <div>
+      <button class="btn gray-btn" onclick="operator('4')">4</button>
+      <button class="btn gray-btn" onclick="operator('5')">5</button>
+      <button class="btn gray-btn" onclick="operator('6')">6</button>
+      <button class="btn orange-btn" onclick="operator(' - ')">-</button>
+    </div>
+    &nbsp;
+    <div>
+      <button class="btn gray-btn" onclick="operator('7')">7</button>
+      <button class="btn gray-btn" onclick="operator('8')">8</button>
+      <button class="btn gray-btn" onclick="operator('9')">9</button>
+      <button class="btn orange-btn" onclick="operator(' * ')">&times;</button>
+    </div>
+    &nbsp;
+    <div>
+      <button class="btn gray-btn" onclick="operator('0')">0</button>
+      <button class="btn gray-btn" onclick="operator('.')">.</button>
+      <button class="btn gray-btn" onclick="equals()">=</button>
+      <button class="btn orange-btn" onclick="operator(' / ')">/</button>
+    </div>
+    &nbsp;
+    <div>
+      <!-- <button onclick="calculation=''
     console.log(calculation)
     " id="cbtn">clear</button> -->
-    <button onclick="clearbtn()">clear</button>
-  </div>
+      <button class="btn clear-btn" onclick="clearbtn()">clear</button>
+    </div>
+
+  </main>
 
 
 </body>
