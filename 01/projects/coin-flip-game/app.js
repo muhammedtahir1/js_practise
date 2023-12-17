@@ -1,7 +1,5 @@
-let random = Math.random();
 // console.log(random);
 // let result = '';
-let guess = 'heads';
 
 /*
 if (random < 0.5) {
@@ -20,6 +18,34 @@ if (guess === result) {
 // OR
 // Ternary operators (condition ? A : B)
 
-let result = random < 0.5 ? 'heads' : 'tails'
 
-console.log(guess === result ? 'You Win!' : 'You Lose!');
+
+
+// 
+
+const score = JSON.parse(localStorage.getItem('score')) || {
+  wins: 0,
+  losses: 0
+};
+
+function choose(value) {
+  let randomNo = Math.random();
+  const result = randomNo < 0.5 ? 'heads' : 'tails';
+  guess = value;
+  console.log(guess === result ? 'You Win!' : 'You Lose!');
+
+  if (guess === result) {
+    score.wins++;
+  }
+  else {
+    score.losses++;
+  }
+
+  localStorage.setItem('score', JSON.stringify(score));
+  console.log(score);
+
+}
+
+
+
+

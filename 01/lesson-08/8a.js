@@ -50,4 +50,4 @@ let result = text.repeat(4);
 
 localStorage.setItem('name', 'KingTahir');
 
-console.log(localStorage.getItem(rich));
+// console.log(localStorage.getItem(rich));
