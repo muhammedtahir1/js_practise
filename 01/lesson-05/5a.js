@@ -1,0 +1,1 @@
+// Everything did in console of the browser itself.
